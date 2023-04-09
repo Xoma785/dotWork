@@ -1,214 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Регистрация на аттестацию</title>
 </head>
-
 <body>
-    <div class="wrapper d-flex flex-column justify-content-between" style="min-height: 100vh;">
-        <header>
-            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/index.html">
-                        <img src="./images/logo.png" alt="Bootstrap" width="30" height="30">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/index.html">О себе</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/about.html">Резюме</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Портфолио</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Компетенции</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Контакты</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/registration.html">
-                                    Регистрация на аттестацию
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <header>
+        <ul>
+            <li><a href="/dotWork/index.html"><img src="./images/logo.png" alt="logo"></a></li>
+            <li><a href="/dotWork/index.html">О себе</a></li>
+            <li><a href="/dotWork/about.html">Резюме</a></li>
+            <li><a href="№">Портфолио</a></li>
+            <li><a href="#">Компетенции</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="/dotWork/registration.html">Регистрация на аттестацию</a></li>
+        </ul>
 
-        <main class="flex-grow-1">
-            <div class="container">
-                <div class="row mt-4">
-                    <div class="col col-12 col-md-6 mb-4">
-                        <div>
-                            <label for="user-surname" class="form-label">Фамилия</label>
-                            <input type="text" name="user-surname" class="form-control" id="user-surname">
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-6 mb-4">
-                        <div>
-                            <label for="user-name" class="form-label">Имя</label>
-                            <input type="text" name="user-name" class="form-control" id="user-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-12 col-md-6 mb-4">
-                        <div>
-                            <label for="login" class="form-label">Логин</label>
-                            <input type="text" name="login" class="form-control" id="login">
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-6 mb-4">
-                        <div>
-                            <label for="password" class="form-label">Пароль</label>
-                            <input type="password" name="password" class="form-control" id="password">
-                        </div>
-                    </div>
-                </div>
+        <h1>Веб - технологии</h1>
+    </header>
 
-                <div class="row">
-                    <div class="col col-12 col-md-6 mb-4">
-                        <label class="form-label">Выберите время</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time-radio" id="time-radio-1">
-                            <label class="form-check-label" for="time-radio-1">
-                                9:00 - 10:00
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time-radio" id="time-radio-2">
-                            <label class="form-check-label" for="time-radio-2">
-                                10:30 - 11:30
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time-radio" id="time-radio-3">
-                            <label class="form-check-label" for="time-radio-3">
-                                12:00 - 13:00
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time-radio" id="time-radio-4">
-                            <label class="form-check-label" for="time-radio-4">
-                                13:30 - 14:30
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time-radio" id="time-radio-5">
-                            <label class="form-check-label" for="time-radio-5">
-                                15:00 - 16:00
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time-radio" id="time-radio-6">
-                            <label class="form-check-label" for="time-radio-6">
-                                16:30 - 17:30
-                            </label>
-                        </div>
+    <main>
+        <form action="#" style="width: 400px;">
+            <fieldset style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                <div style="display: inline-block; width: 50%;">
+                    <div style="margin-bottom: 8px;">
+                        <label for="surname">
+                            <span style="display: inline-block; width: 100px;">Фамилия</span>
+                            <input type="text" id="surname">
+                        </label>
                     </div>
-                    <div class="col col-12 col-md-6 mb-4">
-                        <label class="form-label">Выберите форму контроля</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="review-radio" id="review-radio-1">
-                            <label class="form-check-label" for="review-radio-1">
-                                текст
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="review-radio" id="review-radio-2">
-                            <label class="form-check-label" for="review-radio-2">
-                                собеседование
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="review-radio" id="review-radio-3">
-                            <label class="form-check-label" for="review-radio-3">
-                                доклад
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="review-radio" id="review-radio-4">
-                            <label class="form-check-label" for="review-radio-4">
-                                контрольная работа
-                            </label>
-                        </div>
+                    <div>
+                        <label for="name">
+                            <span style="display: inline-block; width: 100px;">Имя</span>
+                            <input type="text" id="name">
+                        </label>
                     </div>
                 </div>
+                <div style="display: inline-block; width: 50%;">
+                    <div style="margin-bottom: 8px;">
+                        <label for="surname">
+                            <span style="display: inline-block; width: 100px;">Логин</span>
+                            <input type="text" id="surname">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="name">
+                            <span style="display: inline-block; width: 100px;">Пароль</span>
+                            <input type="password" id="name">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
 
-                <div class="row">
-                    <div class="col col-12 col-md-6 mb-4">
-                        <div class="mb-3">
-                            <label for="select" class="form-label">Выберите предмет</label>
-                            <select class="form-select" aria-label="Default select example" id="select">
-                                <option value="1">Первый предмет</option>
-                                <option value="2">Второй передмет</option>
-                                <option value="3">Третий предмет</option>
-                                <option value="4">Четвертый предмет</option>
-                            </select>
-                        </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                <fieldset style="width: 165px;">
+                    <label>Выберите время</label>
+                    <div>
+                        <input id="radio-1" type="radio" name="time">
+                        <label for="radio-1">9:00 - 10:00</label>
                     </div>
-                    <div class="col col-12 col-md-6 mb-4">
-                        <div class="mb-3">
-                            <label class="form-label d-block">Проверить данные</label>
-                            <button type="submit" class="btn btn-primary">Отправить</button>
-                        </div>
+                    <div>
+                        <input id="radio-2" type="radio" name="time">
+                        <label for="radio-2">10:30 - 11:30</label>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Дополнительная информация</label>
-                            <textarea class="form-control" id="comment" rows="5"></textarea>
-                          </div>
+                    <div>
+                        <input id="radio-3" type="radio" name="time">
+                        <label for="radio-3">12:00 - 13:00</label>
                     </div>
-                </div>
+                    <div>
+                        <input id="radio-4" type="radio" name="time">
+                        <label for="radio-4">13:30 - 14:30</label>
+                    </div>
+                    <div>
+                        <input id="radio-5" type="radio" name="time">
+                        <label for="radio-5">15:00 - 16:00</label>
+                    </div>
+                    <div>
+                        <input id="radio-6" type="radio" name="time">
+                        <label for="radio-6">16:30 - 17:30</label>
+                    </div>
+                </fieldset>
+                <fieldset style="width: 165px;">
+                    <label>Выберите форму контроля</label>
+                    <div>
+                        <input id="radio-control-6" type="radio" name="control">
+                        <label for="radio-control-6">текст</label>
+                    </div>
+                    <div>
+                        <input id="radio-control-6" type="radio" name="control">
+                        <label for="radio-control-6">собеседование</label>
+                    </div>
+                    <div>
+                        <input id="radio-control-6" type="radio" name="control">
+                        <label for="radio-control-6">доклад</label>
+                    </div>
+                    <div>
+                        <input id="radio-control-6" type="radio" name="control">
+                        <label for="radio-control-6">контрольная работа</label>
+                    </div>
+                </fieldset>
             </div>
-        </main>
 
-        <footer class="border-top">
-            <div class="container">
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 my-4">
-                    <div class="col-md-8 d-flex align-items-center mb-3 mb-md-0">
-                        <span class="text-muted text-center">Сайт разработан ФИО, Copyright © 2023</span>
-                    </div>
-
-                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li class="ms-3">
-                            <a href="#"><img src="./images/vkontakte.png" alt="vkontakte"></a>
-                        </li>
-                        <li class="ms-3">
-                            <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
-                        </li>
-                        <li class="ms-3">
-                            <a href="#"><img src="./images/github.png" alt="github"></a>
-                        </li>
-                    </ul>
-                </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                <fieldset style="width: 165px;">
+                    <label for="select-lesson">Выберите предмет</label>
+                    <select name="select-lesson" id="select-lesson">
+                        <option value="1">Первый предмет</option>
+                        <option value="2">Второй передмет</option>
+                        <option value="3">Третий предмет</option>
+                        <option value="4">Четвертый предмет</option>
+                    </select>
+                </fieldset>
+                <fieldset style="width: 165px;">
+                    <label>Проверить данные</label>
+                    <button>Отправить</button>
+                </fieldset>
             </div>
-        </footer>
-    </div>
 
+            <fieldset>
+                <label for="comment">Дополнительная информация</label>
+                <textarea 
+                        name="comment" 
+                        id="comment" 
+                        cols="30" 
+                        rows="10"
+                        style="width: 100%;"
+                    >
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+                </textarea>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#"><img src="./images/vkontakte.png" alt="vkontakte"></a>
+            <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="./images/github.png" alt="github"></a>
+        </div>
+
+        <div>
+            <span>Сайт разработан ФИО, Copyright © 2023</span>
+        </div>
+    </footer>
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
