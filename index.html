@@ -4,48 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Главная</title>
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="/dotWork/index.html"><img src="./images/logo.png" alt="logo"></a></li>
-            <li><a href="/dotWork/index.html">О себе</a></li>
-            <li><a href="/dotWork/about.html">Резюме</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Компетенции</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="/dotWork/registration.html">Регистрация на аттестацию</a></li>
+        <div class="header__top">
+            <a class="logo" href="/index.html">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <h1>Программные технологии Интернета</h1>
+        </div>
+        <ul class="header__nav">
+            <li><a href="/index.html">О себе</a></li>
+            <li><a href="/description.html">Резюме</a></li>
+            <li><a href="/registration.html">Записаться на аттестацию</a></li>
         </ul>
-
-        <h1>Веб - технологии</h1>
     </header>
 
     <main>
-        <ul>
-            <li>ФИО</li>
-            <li>Группа № 007</li>
-            <li>
-                <img src="./images/avatar.jpg" alt="avatar">
-            </li>
-            <li>
-                Такой то <a href="https://www.google.ru">ВУЗ</a>
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </li>
-        </ul>
+        <section class="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-preview">
+                        <img src="./images/avatar.jpg" alt="avatar">
+                        <h4>Фамилия И.О. студента</h4>
+                        <span>номер группы</span>
+                        <a href="https://www.google.ru">Университет Дубна</a>
+                    </div>
+                    <div class="about-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div>
-            <a href="#"><img src="./images/vkontakte.png" alt="vkontakte"></a>
-            <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
-            <a href="https://github.com/Xoma785/dotWork"><img src="./images/github.png" alt="github"></a>
+            <span>Сайт разработан ФИО, Copyright © 2023</span>
         </div>
-
         <div>
-            <span>Сайт разработан Беликова А.А. гр. Прог-С-19, Copyright © 2023</span>
+            <a href="#"><img src="./images/vk.png" alt="vkontakte"></a>
+            <a href="#"><img src="./images/telegram.png" alt="telegram"></a>
+            <a href="#"><img src="./images/github.png" alt="github"></a>
         </div>
     </footer>
 </body>
