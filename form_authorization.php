@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Главная</title>
+    <title>Регистрация на аттестацию</title>
 </head>
 <body>
     <header>
@@ -25,19 +25,28 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="registration">
             <div class="container">
-                <div class="about-wrapper">
-                    <div class="about-preview">
-                        <img src="./images/avatar.jpg" alt="avatar">
-                        <h4>Фамилия И.О. студента</h4>
-                        <span>номер группы</span>
-                        <a href="https://www.google.ru">Университет Дубна</a>
-                    </div>
-                    <div class="about-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                </div>
+                <form method="post"action="authorization_script.php" class="registration-wrapper1">
+                    <fieldset class="form-row double">
+                        <div class="form-row-item">
+                            <div>
+                                <label for="login">
+                                    <span>Логин</span>
+                                    <input type="text" id="login" name="login">
+                                </label>
+                                <label for="password">
+                                    <span>Пароль</span>
+                                    <input type="password" id="password" name="password">
+                                </label>
+                            </div>
+                            <div>
+                                <button type="submit">Авторизация</button>
+                                <button type="submit" formaction="form_registration.php">Регистрация</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>

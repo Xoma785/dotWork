@@ -164,6 +164,11 @@ footer span {
     width: 100%;
 }
 
+.registration-wrapper1 {
+    display: flex;
+    width: 0%;
+}
+
 .form-row {
     margin-bottom: 16px;
 }
